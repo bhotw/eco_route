@@ -22,4 +22,23 @@ function App() {
   );
 }
 
+var lat = '';
+var lng = '';
+
+// depends on whether you really only have the zip code
+var address = {zipcode};
+
+geocoder.geocode({ 'address': address}, function(results, status) {
+  if (status == google.maps.GeocoderStatus.OK) {
+     lat = results[0].geometry.location.lat();
+     lng = results[0].geometry.location.lng();
+    });
+  } else {
+    console.log("Geocode was not successful for the following reason: " + status);
+  }
+});
+console.log('Latitude: ' + lat + ' Longitude: ' + lng);
+
+
+
 export default App;
