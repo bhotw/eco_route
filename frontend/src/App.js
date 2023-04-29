@@ -1,6 +1,23 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+//import axios from "axios";
+import React from "react";
+import PersonList from './components/PersonList.js';
+//const axios = require('axios').default;
 
+function App() {
+  return (
+    <div ClassName="App">
+      <PersonList/>
+    </div>
+  )
+}
+
+ 
+
+
+
+/*
 function App() {
   return (
     <div className="App">
@@ -21,5 +38,10 @@ function App() {
     </div>
   );
 }
+*/
+
+
+
+
 
 export default App;
