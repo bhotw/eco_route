@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Eco Route will present users with car/bike routes that are scored according to its environmental cleanliness quality. It also has a pollen locator which shows pollen information for given location (This will help users with allergies avoid those locations when they are outside) The app will also track a user's carbon intensity profile so that they can adjust their electricity use throughout the day in order to lower their carbon footprint.
 
 ## Available Scripts
 

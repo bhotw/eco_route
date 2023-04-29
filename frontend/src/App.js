@@ -36,6 +36,15 @@ function App() {
       });
   }
 
+  /*
+  function getRoute(){
+    latitude();
+    axios.post(" https://api.breezometer.com/insights/v1/cleanest-route?key=44534c49bb384ed982f3412ebf9439c2")
+    .then((response) => {
+
+    })
+  }
+*/
 
 
   const handleChange = (event) => {
@@ -56,7 +65,7 @@ function App() {
       <header className="App-header">
         <h1>Eco Route</h1>
         <h>Enter a zip code and get the Pollen index of that location.</h>
-        <label for="zcode"> ZipCode:
+        <label className="zcode"> ZipCode:
         <input
         type="text"
         id="zcode"
@@ -68,9 +77,17 @@ function App() {
         <div> 
         <button className="App-button" onClick={handleClick} > Enter </button>
         </div>
-        <h3>pollen index for Tree: { treePollen }</h3>
-        <h3>pollen index for Grass: { grassPollen }</h3>
-        <h3>pollen index for Weed: { weedPollen }</h3>
+        
+
+        <h3>Pollen index for Tree: { treePollen }</h3>
+        
+        <h3>Pollen index for Grass: { grassPollen }</h3>
+        
+        <h3>Pollen index for Weed: { weedPollen }</h3>
+
+        <h5>The Pollen Index is on a scale of 1 to 5. 1 being a low pollen area, 5 being a high pollen area</h5>
+        
+        
 
       </header>
     </div>
