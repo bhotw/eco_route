@@ -53,25 +53,19 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header class="App-header" >
         <h1>Eco Route</h1>
         <h>Enter a zip code and get the Pollen index of that location.</h>
-        <label for="zcode"> ZipCode:
-        <input
-        type="text"
-        id="zcode"
-        name="zcode"
-        onChange={handleChange}
-        value={zcode}
-        />
-        </label>
-        <div> 
-        <button className="App-button" onClick={handleClick} > Enter </button>
+        
+          <label class="App-zcode"> ZipCode:
+          </label>
+          <input type="text" id="zcode" name="zcode" onChange={handleChange} value={zcode}/>
+          <button class="App-button" onClick={handleClick} > Enter </button>
+        <div class="App-body">
+          <h3>pollen index for Tree: { treePollen }</h3>
+          <h3>pollen index for Grass: { grassPollen }</h3>
+          <h3>pollen index for Weed: { weedPollen }</h3>
         </div>
-        <h3>pollen index for Tree: { treePollen }</h3>
-        <h3>pollen index for Grass: { grassPollen }</h3>
-        <h3>pollen index for Weed: { weedPollen }</h3>
-
       </header>
     </div>
   );
