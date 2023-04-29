@@ -65,7 +65,9 @@ function App() {
         value={zcode}
         />
         </label>
-        <button className="App-Button" onClick={handleClick} > Enter </button>
+        <div> 
+        <button className="App-button" onClick={handleClick} > Enter </button>
+        </div>
         <h3>pollen index for Tree: { treePollen }</h3>
         <h3>pollen index for Grass: { grassPollen }</h3>
         <h3>pollen index for Weed: { weedPollen }</h3>
