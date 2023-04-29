@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #49be25;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+
+.App-button {
+  background-color: #ffff; /* Green */
+  border: none;
+  color: black;
+  padding: 0.9px 1px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 320px;
+  position: relative;
+  top:-33px;
 }
 
 .App-link {
