@@ -3,12 +3,14 @@ import './App.css';
 //import axios from "axios";
 import React from "react";
 import PersonList from './components/PersonList.js';
+import PollenInfo from './components/PollenInfo';
 //const axios = require('axios').default;
 
 function App() {
   return (
     <div ClassName="App">
       <PersonList/>
+      <PollenInfo/>
     </div>
   )
 }
