@@ -1,8 +1,6 @@
 
 import './App.css';
 import React from "react";
-// import getLanAndLong from './components/getLanAndLong.js';
-import getPollen from './components/getPollen';
 import { useState } from "react";
 import axios from 'axios';
 
@@ -45,8 +43,7 @@ function App() {
   };
 
   const handleClick = () => {
-    // 👇 "message" stores input field value
-    if (zcode != ' '){
+    if (zcode !== ' '){
       getPollen();
       console.log("clicked");
       console.log(lat);
