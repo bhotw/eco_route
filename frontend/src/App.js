@@ -66,6 +66,7 @@ function App() {
           <h3>pollen index for Tree: { treePollen }</h3>
           <h3>pollen index for Grass: { grassPollen }</h3>
           <h3>pollen index for Weed: { weedPollen }</h3>
+          <h5>The Pollen Index is on a scale of 1 to 5. 1 being a low pollen area, 5 being a high pollen area</h5>
         </div>
       </header>
     </div>
